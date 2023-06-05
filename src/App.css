@@ -1,15 +1,121 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+.App{
+text-align: center;
+font-family: 'Poppins', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.button-group{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+.mainContainer div{
+  margin: 1rem;
+  cursor: pointer;
+} 
+
+main{
+  width: auto;
+  margin: 3rem;
+}
+main h1,h3{
+  font-weight: 500;
+}
+.stud-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+margin: 10px;
+width: 100%;
+
+}
+.stud-card{
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: rgb(52, 162, 235);
+  color: white;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+}
+.stud-card h4{
+font-size: 2rem;
+font-weight: 500;
+}
+.stud-card p{
+  font-size: 1.2rem;
+}
+.btn-group button,.addinputbox button{
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-group button:hover{
+  background-color: rgb(4, 81, 132);
+  transition: 0.5s;
+  color: white;
+}
+.addinputbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.addinputbox input{
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 30rem;
+  font-size: 1.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addinputbox button:hover{
+  background-color: rgb(4, 81, 132);
+  transition: 0.5s;
+  color: white;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width:600px){
+  .mainContainer div{
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.5px;
+  }
+  .stud-card{
+  width: 100px;
+  font-size: 0.5px;
+  }
+  .stud-card h4{
+    font-size: 20px;
+  }
+  .stud-card p{
+    font-size: 15px;
+  }
+  .btn-group button,.addinputbox button{
+  font-size: 0.7rem;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 5px;
   }
 }
 
